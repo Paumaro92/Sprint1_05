@@ -1,5 +1,6 @@
 <?php
-
+include ('gos.php');
+include ('gat.php');
 abstract class animals
 {
     protected $nom;
@@ -14,22 +15,12 @@ abstract class animals
     }
 
 }
-class gos extends animals {
-    public function makeSound() {
-        return "Bup, bup!";
-    }
-  
-}
-  class gat extends animals {
-        public function makeSound() {
-            return "Meu!";
-        }
-    }
 
-    $gos = new gos;
-    echo $gos->makesound() . "\n";
-    $gat = new gat;
-    echo $gat->makesound();
+
+$gos = new gos;
+echo $gos->makesound() . "\n";
+$gat = new gat;
+echo $gat->makesound();
 
 
 ?>

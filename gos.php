@@ -1,7 +1,9 @@
 <?php
-class gos extends animals {
+require_once 'animal.php';
+
+class gos extends animal {
     public function makeSound() {
-        return "Bup, bup!";
+        echo $this->nom . " diu, Bup, bup!";
     }
   
 }

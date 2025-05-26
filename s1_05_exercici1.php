@@ -1,25 +1,12 @@
 <?php
 include ('gos.php');
 include ('gat.php');
-abstract class animals
-{
-    protected $nom;
-
-    public function animalNoms($nom)
-    {
-        $this->nom = $nom;
-    }
-    public function makeSound()
-    {
-        return "";
-    }
-
-}
 
 
-$gos = new gos;
+
+$gos = new gos ("Bobby");
 echo $gos->makesound() . "\n";
-$gat = new gat;
+$gat = new gat("Misifu");
 echo $gat->makesound();
 
 

@@ -1,7 +1,8 @@
 <?php
-  class gat extends animals {
+require_once 'animal.php';
+  class gat extends animal {
         public function makeSound() {
-            return "Meu!";
+            echo $this->nom . " diu, Meu!";
         }
     }
     ?>

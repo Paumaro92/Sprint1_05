@@ -4,10 +4,10 @@ include ('gat.php');
 
 
 
-$gos = new gos ("Bobby");
-echo $gos->makesound() . "\n";
-$gat = new gat("Misifu");
-echo $gat->makesound();
+$gos1 = new gos ("Bobby");
+echo $gos1->makesound() . "\n";
+$gat1 = new gat("Misifu");
+echo $gat1->makesound();
 
 
 ?>
